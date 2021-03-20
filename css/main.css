@@ -548,6 +548,7 @@ aside {
   /* Hero */
   .hero-area h1 {
     width: 60%;
+<<<<<<< HEAD
 }
 
   /* Aside */
@@ -593,6 +594,53 @@ aside {
 
 }
 
+=======
+}
+
+  /* Aside */
+  aside .content-wrapper {
+    justify-content: space-around;
+  }
+
+  aside .content-wrapper .form-description,
+  aside .content-wrapper .form {
+    width: 30%;
+  }
+
+  /* Features */
+
+  .features h2 {
+    width: 90%;
+  }
+
+  .features article {
+    flex-basis: 33%;
+  }
+  
+  /* Reviews */
+  .reviews article div {
+    width: 42%;
+  }
+
+  /* ==========================================================================
+  About Page
+  ========================================================================== */
+
+  .mission h2,
+  .contact-section .content-wrapper h2 {
+      width: 95%;
+  }
+
+  /* ==========================================================================
+  FAQ Page
+  ========================================================================== */
+  .faq h2 {
+    width: 100%;
+  }
+
+}
+
+>>>>>>> 42b324e4e6595a18a9f2490ecb16cf5554ed9d77
 
 @media print,
 (-webkit-min-device-pixel-ratio: 1.25),
