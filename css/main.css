@@ -129,9 +129,15 @@ textarea {
    p {
      font-size:0.875em;
      line-height:1.285;
-
    }
 
+   img {
+     width:100%
+   }
+
+   figure {
+     margin:0;
+   }
    address {
      font-style:normal;
 
@@ -140,8 +146,8 @@ textarea {
    .content-wrapper{ 
      width: 90%;
      margin: 50px 0;
-     
    }
+
    /* -------------------- Base Header - Footer Styles -------------------- */
 
    header,
@@ -162,6 +168,14 @@ header .content-wrapper {
   flex-flow: row wrap;
   margin:0;
 }
+
+header figure{
+  width:60%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow:row wrap;
+}
 .header-divider {
   background:#3a3a3a;
   width: 100%;
@@ -175,7 +189,7 @@ header nav {
   align-items: center;
   flex-flow: row wrap;
   font-size:1.125em;
-  font-weight:bold;
+  font-weight:700;
   text-transform:uppercase;
   width: 60%;
   
@@ -231,6 +245,10 @@ footer .copyright {
 /* Hero Area */
 
 .hero-area {
+  background:url(../img/jake-melara-30679-unsplash.png);
+  background-size: cover;
+  background-position:center;
+  min-height: 500px;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -283,6 +301,9 @@ input[type=button] {
 /* Features */
 
 .features {
+  background:url('../img/rawpixel-800820-unsplash1.png');
+  background-size: cover;
+  background-position: center;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -369,6 +390,7 @@ input[type=button] {
 }
 .faq h2 {
   margin-bottom: 40px;
+  line-height:1;
 }
 
 .faq-content {
@@ -495,6 +517,9 @@ input[type=button] {
     justify-content: space-between;
   }
 
+  header figure{
+    width:30%;
+  }
   header nav {
     width: 20%;
   }
@@ -507,6 +532,10 @@ input[type=button] {
     display: none;
   }
   /* Hero Area */
+  .hero-area{
+    min-height: 600px;
+  }
+
   .hero-area h1 {
     font-size: 3em;
     line-height: 1;
@@ -540,7 +569,7 @@ input[type=button] {
   }
   
   .features .features-item-description {
-    width: 50%;
+    width: 62%;
   }
 
   /* Reviews */
@@ -548,9 +577,18 @@ input[type=button] {
     display: flex;
     justify-content: space-between;
   }
+  .reviews h2{
+    width:82%
+  }
 
-  .reviews article div {
+  .reviews article div,
+  .reviews article figure {
     width: 49%;
+  }
+
+  .reviews h3{
+    width:75%;
+    margin:0;
   }
 
   /* Footer */
@@ -563,6 +601,15 @@ input[type=button] {
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+  footer h4{
+    font-size:1.5em;
+    margin-bottom:40px;
+  }
+
+  footer p{
+    line-height: 1.285;
   }
 
   footer .contact {
@@ -598,6 +645,10 @@ input[type=button] {
     align-items: flex-start;
   }
 
+  .contact-content h4 {
+    font-size: 1.5em;
+  }
+
   /* ==========================================================================
    FAQ Page
    ========================================================================== */
@@ -613,18 +664,41 @@ input[type=button] {
   .faq h2 {
     width: 100%;
   }
+  .faq h4,
+  .faq p{
+    font-size: .875em;
+    line-height: 1.125;
+  }
 }
 
 
 @media only screen and (min-width: 1200px) {
   /* Desktop style here */
+  header{
+    padding:15px 0;
+  }
+
   .content-wrapper {
     max-width: 960px;
   }
 
+  h2{
+    font-size:2.25em;
+  }
+
+  h3,
+  h4{
+font-size:1.875em;
+  }
+  p {
+    font: size 1.125em;
+    line-height: 1.333;
+  }
+
   /* Hero */
   .hero-area h1 {
-    width: 60%;
+    font-size:3.75em;
+    width: 80%;
 }
   /* Aside */
   aside .content-wrapper {
@@ -634,6 +708,10 @@ input[type=button] {
   aside .content-wrapper .form-description,
   aside .content-wrapper .form {
     width: 30%;
+  }
+
+  .form-description p {
+    font: size 1.125em;
   }
 
   /* Features */
@@ -651,6 +729,14 @@ input[type=button] {
     width: 42%;
   }
 
+  .reviews h2 {
+    padding-bottom: 50px;
+  }
+
+  footer h4{
+    font-size:1.875em;
+  }
+
   /* ==========================================================================
   About Page
   ========================================================================== */
@@ -658,6 +744,11 @@ input[type=button] {
   .mission h2,
   .contact-section .content-wrapper h2 {
       width: 95%;
+      font-size:3em;
+  }
+
+  .contact-content h4 {
+    font-size: 1.874em;
   }
 
   /* ==========================================================================
@@ -665,6 +756,13 @@ input[type=button] {
   ========================================================================== */
   .faq h2 {
     width: 100%;
+    font-size:3em;
+  }
+
+  .faq h4,
+  .faq p{
+    font-size:1.125em;
+    line-height:1;
   }
 
 }
